@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function openExplorer(path) {
+            alert("try to open windows explorer with path : " + path);
+            window.open(path);
+        }
+    </script>
+</head>
+<body>
+    <div><a href="file://d:/">anchore file://d:/</a></div>
+    <div><a href="d:/">anchore d:/</a></div>
+
+    <p onclick="openExplorer('file:\/\/d:/')">open explorer to file://d:</p>  
+    <p onclick="openExplorer('d:/')">open explorer to d:/</p>  
+    d:/{site}/{local}/{contrat}/
+</body>
+</html>
